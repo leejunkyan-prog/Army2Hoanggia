@@ -26,7 +26,7 @@
   var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var url = document.getElementById("install").href;
   if (ios) {
-    window.setTimeout(function(){ window.location.href = url; }, 250);
+    window.location.replace(url);
   } else {
     document.getElementById("status").textContent = "Mở trang này bằng Safari trên iPhone để cài đặt.";
   }
